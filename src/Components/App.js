@@ -1,11 +1,15 @@
 import React from 'react';
 import '../Styles/App.css';
+import WeatherContainer from './WeatherContainer';
+require('dotenv').config();
+
+
 
 function App() {
   return (
-    <div className="App">
-
-    </div >
+    <section className="app-container">
+      <WeatherContainer />
+    </section >
   );
 }
 
