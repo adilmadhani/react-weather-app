@@ -57,7 +57,7 @@ function WeatherContainer() {
     return (
         <section className="weather-container">
             <header className="weather-header">
-                <h3>Weather with Aadil<i className="material-icons">wb_sunny</i></h3>
+                <h3>Weathering Today<i className="material-icons">wb_sunny</i></h3>
                 <div>
                     <input placeholder="Zip Code" className="search-input" onChange={updateSearchQuery} maxLength='5' />
                     <button className="material-icons" onClick={getWeatherData}>search</button>
