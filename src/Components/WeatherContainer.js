@@ -11,7 +11,8 @@ function WeatherContainer() {
         temp: null,
         humidity: null,
         desc: null,
-        city: null
+        city: null,
+        icon: null
     });;
     const [isValidZip, setIsValidZip] = useState(true);
 
@@ -44,7 +45,8 @@ function WeatherContainer() {
                 temp: convertToFarenheit(data.main.temp),
                 humidity: data.main.humidity,
                 desc: data.weather[0].main,
-                city: data.name
+                city: data.name,
+                icon: data.weather[0].icon
             }));
     }
 

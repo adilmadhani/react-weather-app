@@ -56,6 +56,10 @@
     margin-top: 75px;
 }
 
+.weather-info h2 {
+    margin-bottom:0px;
+}
+
 .weather-info p {
     font-size: 1.2rem;
 }
