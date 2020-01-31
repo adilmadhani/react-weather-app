@@ -57,13 +57,16 @@ function WeatherContainer() {
     return (
         <section className="weather-container">
             <header className="weather-header">
-                <h3>Weathering Today<i className="material-icons">wb_sunny</i></h3>
+                <h3>Weathering Now<i className="material-icons">wb_sunny</i></h3>
                 <div>
-                    <input placeholder="Zip Code" className="search-input" onChange={updateSearchQuery}
-                        onKeyPress={event => {
-                            if (event.key === 'Enter') {
+                    <input id="zip-code" placeholder="Zip Code" className="search-input" onChange={updateSearchQuery}
+                        onKeyUp={() => {
+                            if (searchQuery.length === 5) {
                                 getWeatherData();
                             }
+                            // if (event.key === 'Enter') {
+                            //     getWeatherData();
+                            // }
                         }}
                         maxLength='5' />
                     <button className="material-icons" onClick={getWeatherData}>search</button>
