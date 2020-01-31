@@ -72,7 +72,7 @@ function WeatherContainer() {
                     <button className="material-icons" onClick={getWeatherData}>search</button>
                 </div>
             </header>
-            <p className="error">{isValidZip ? '' : 'Invalid Zip Code'}</p>
+            {/* <p className="error">{isValidZip ? '' : 'Invalid Zip Code'}</p> */}
             <section className="weather-info">
                 {weatherData.temp === null ? (
                     <p>No Weather to Display<i className="material-icons">wb_sunny</i></p>
